@@ -1,4 +1,5 @@
 
+
 Local unix server has been used to configure Airflow. This has been done to keep airflow independent. So in future we can use the DAGs and other scripts in it, on multiple platforms with some basic changes in the code. 
 Three tasks running in airflow Run Script, Clean Data Task and Insert Data Task
 
@@ -13,3 +14,8 @@ Insert Data Task - This will trigger a Dataproc job submission in the same clust
 Reporting- Looker Studio has been integrated with the BigQuery Tablet to visualize the data.
 
 https://lookerstudio.google.com/reporting/d865e11d-b448-4478-8c0c-9ebd25463853/page/jabGE
+
+Steps
+1. After installation of airflow, put dag_NYC.py in the dags folder.
+Note: dag_NYC_v2 will create the Dataproc cluster and delete it after use. Free tier space limitation is there so having difficulty with defaut configurations. 
+2. 
