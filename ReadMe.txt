@@ -18,4 +18,7 @@ https://lookerstudio.google.com/reporting/d865e11d-b448-4478-8c0c-9ebd25463853/p
 Steps
 1. After installation of airflow, put dag_NYC.py in the dags folder.
 Note: dag_NYC_v2 will create the Dataproc cluster and delete it after use. Free tier space limitation is there so having difficulty with defaut configurations. 
-2. 
+2. Have to change the Sources and Destinations mentioned in the files. 
+create sourche bucket, destination bucket, script, data and one metadata bucket. 
+3. bigquery table has to be crearted.
+4. below service account roles has to be added -
